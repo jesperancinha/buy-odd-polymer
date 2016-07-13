@@ -22,3 +22,11 @@ You can of course also use WAMP or an alternative tool for serving up content.
 
 Test drive for polymer PRPL pattern and so forth. This will be a webpage based on the idea of making an eCommerce service providing all sorts of odd things to buy. :)
 
+
+* How it was built:
+
+´´´
+
+$ bower install --save GoogleWebComponents/google-map
+
+´´´

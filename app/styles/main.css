@@ -16,3 +16,8 @@ body {
 .page-title {
   outline: none;
 }
+
+google-map {
+    height: 400px;
+    width: 100%;
+}
