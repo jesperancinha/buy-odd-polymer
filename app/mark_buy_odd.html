@@ -1,0 +1,42 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="mark-buy-odd">
+    <style>
+    h1 {
+      color: red;
+    }
+  </style>
+    <template>
+        <h1>This is the buy odd web application!</h1>
+        <h1>And this is your product: <span>{{productName}}</span> described as <span>{{productDescription}}</span></h1>
+        <h1>Dimension: {{productWidth}} X {{productHeight}}</h1>
+        <h1>Area: {{area}}</h1>
+
+        <h2>Change properties: </h2>
+        <h2>Change product name: <input type="text" value="{{productName::input}}"/></h2>
+        <h2>Change product height: <input type="text" value="{{productHeight::input}}"/></h2>
+        <h2>Change product width: <input type="text" value="{{productWidth::input}}"/></h2>
+
+    </template>
+</dom-module>
+    
+<script>
+    Polymer ({
+        is: "mark-buy-odd",
+
+        properties: {
+            productName: String,
+            productDescription: String,
+            productHeight: Number,
+            productWidth: Number,
+            area: {
+                   type: Number,
+                   computed: "calculateArea(productHeight, productWidth)"
+            }
+        },
+
+        calculateArea: function(productHeight, productWidth) {
+            return productHeight * productWidth;
+        }
+    });
+</script>
