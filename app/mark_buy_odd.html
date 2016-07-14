@@ -7,8 +7,11 @@
     }
   </style>
     <template>
-       <h1>This is the buy odd web application!</h1>
-       <h1>And this is your product: {{productName}}</h1>
+        <h1>This is the buy odd web application!</h1>
+        <h1>And this is your product: <span>{{productName}}</span> described as <span>{{productDescription}}</span></h1>
+        <h1>Dimension: {{productWidth}} X {{productHeight}}</h1>
+        <h1>Area: {{area}}</h1>
+
     </template>
 </dom-module>
 
@@ -17,7 +20,18 @@
         is: "mark-buy-odd",
 
         properties: {
-            productName: String
+            productName: String,
+            productDescription: String,
+            productHeight: Number,
+            productWidth: Number,
+            area: {
+                   type: Number,
+                   computed: "calculateArea(productHeight, productWidth)"
+            }
+        },
+
+        calculateArea: function(productHeight, productWidth) {
+            return productHeight * productWidth;
         }
     });
 </script>
