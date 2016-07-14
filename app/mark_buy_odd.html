@@ -8,11 +8,16 @@
   </style>
     <template>
        <h1>This is the buy odd web application!</h1>
+       <h1>And this is your product: {{productName}}</h1>
     </template>
 </dom-module>
 
 <script>
     Polymer ({
-        is: "mark-buy-odd"
+        is: "mark-buy-odd",
+
+        properties: {
+            productName: String
+        }
     });
 </script>
