@@ -1,4 +1,22 @@
-Welcome to Polymer Starter Kit Light!
+
+# Buy Odd web application
+
+Test drive for polymer PRPL pattern and so forth.
+This will be a webpage based on the idea of making an eCommerce service providing all sorts of odd things to buy. :)
+
+
+## How it was built:
+
+```
+
+$ bower install --save GoogleWebComponents/google-map
+
+```
+
+# From the starter kit:
+
+
+## Welcome to Polymer Starter Kit Light!
 
 To begin, fire up a local server from inside the `app` directory. Please make sure to serve up the contents of the directory rather than root as routing will otherwise fail to correctly function.
 
@@ -18,15 +36,3 @@ python -m SimpleHTTPServer 8080
 
 You can of course also use WAMP or an alternative tool for serving up content.
 
-# buy-odd
-
-Test drive for polymer PRPL pattern and so forth. This will be a webpage based on the idea of making an eCommerce service providing all sorts of odd things to buy. :)
-
-
-* How it was built:
-
-´´´
-
-$ bower install --save GoogleWebComponents/google-map
-
-´´´
