@@ -1,5 +1,7 @@
 # bower
 bower_components
+jspm_packages
+node_modules
 
 # Intellij
 .idea

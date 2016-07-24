@@ -163,6 +163,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <paper-material elevation="1">
                 <h1 class="page-title" tabindex="-1">Users</h1>
                 <p>This is the users section</p>
+                <script>
+                  this.users = [
+                  { name: Andy }, { name: Rob }, { name: Chuck }, { name: Sam }
+                  ]
+                </script>
+                <users-list></users-list>
                 <a href$="{{baseUrl}}users/Addy">Addy</a><br>
                 <a href$="{{baseUrl}}users/Rob">Rob</a><br>
                 <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
