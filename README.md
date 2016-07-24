@@ -12,7 +12,9 @@ $ bower install
 $ jspm install
 
 ```
+Notes:
 
+* goto http://localhost:8080/shop_intro.html to see the Bootstrap version
 
 ## How it was built:
 
