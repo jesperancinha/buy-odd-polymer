@@ -82,6 +82,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Drawer Content -->
         <paper-menu class="app-menu" attr-for-selected="data-route" selected="[[route]]">
+          <a data-route="index" href="{{baseUrl}}">
+            <iron-icon icon="home"></iron-icon>
+            <span>Index</span>
+          </a>
+
           <a data-route="home" href="{{baseUrl}}">
             <iron-icon icon="home"></iron-icon>
             <span>Home</span>
@@ -125,7 +130,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <!-- Main Content -->
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
-            <section data-route="home" tabindex="-1">
+            <section data-route="index" tabindex="-1">
               <paper-material elevation="1">
                 <my-greeting></my-greeting>
 
@@ -163,6 +168,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <paper-material elevation="1">
                 <h1 class="page-title" tabindex="-1">Users</h1>
                 <p>This is the users section</p>
+                <script>
+                  this.users = [
+                  { name: Andy }, { name: Rob }, { name: Chuck }, { name: Sam }
+                  ]
+                </script>
+                <users-list></users-list>
                 <a href$="{{baseUrl}}users/Addy">Addy</a><br>
                 <a href$="{{baseUrl}}users/Rob">Rob</a><br>
                 <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
