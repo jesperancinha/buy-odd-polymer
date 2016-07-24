@@ -17,8 +17,9 @@ $ jspm install
 ## How it was built:
 
 ```
-
 $ bower install --save GoogleWebComponents/google-map
+
+$ jspm install jquery bootstrap
 
 ```
 
