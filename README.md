@@ -16,7 +16,7 @@ Notes:
 
 * goto http://localhost:8080/shop_intro.html to see the Bootstrap version
 
-## How it was built:
+## How it was built
 
 ```
 $ bower install --save GoogleWebComponents/google-map
@@ -27,7 +27,7 @@ $ jspm install jquery bootstrap
 
 ---
 
-# From the starter kit:
+# From the starter kit
 
 ## Firing up a server using Python
 
